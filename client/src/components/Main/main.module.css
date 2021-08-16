@@ -1,0 +1,118 @@
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 1);
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 70%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    width: 30%;
+    padding: 20px 0;
+    /* border: 1px solid #000; */
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 80%;
+    width: 70%;
+    /* border: 1px solid #000; */
+}
+
+.li {
+    position: relative;
+    list-style-type: none;
+    font-size: 132px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1.5s all;
+}
+.li a {
+    text-decoration: none;
+}
+
+.li:nth-child(1)::after {
+    position: absolute;
+    content: 'ain';
+    font-size: 82px;
+    cursor: pointer;
+    bottom: 10px;
+    margin-left: 16px;
+    opacity: 0;
+    transition: 0.5s all;
+    letter-spacing: 16px; 
+}
+
+.li:nth-child(1):hover::after {
+    opacity: 1;
+}
+
+.li:nth-child(2)::after {
+    position: absolute;
+    content: 'nspiration';
+    font-size: 82px;
+    cursor: pointer;
+    bottom: 10px;
+    margin-left: 16px;
+    /* left: 20px; */
+    opacity: 0;
+    transition: 0.5s all;
+    letter-spacing: 16px; 
+}
+
+.li:nth-child(2):hover::after {
+    opacity: 1;
+}
+
+.li:nth-child(3)::after {
+    position: absolute;
+    content: 'ools';
+    font-size: 82px;
+    cursor: pointer;
+    bottom: 10px;
+    margin-left: 16px;
+    opacity: 0;
+    transition: 0.5s all;
+    letter-spacing: 16px; 
+}
+
+.li:nth-child(3):hover::after {
+    opacity: 1;
+}
+
+.li:nth-child(4)::after {
+    position: absolute;
+    content: 'bility';
+    font-size: 82px;
+    cursor: pointer;
+    bottom: 10px;
+    margin-left: 16px;
+    opacity: 0;
+    transition: 0.5s all;
+    letter-spacing: 16px; 
+}
+
+.li:nth-child(4):hover::after {
+    opacity: 1;
+}
+

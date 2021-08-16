@@ -1,0 +1,38 @@
+.body {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  top: 35px;
+  right: 300px;
+  z-index: 5000;
+}
+
+.toggle {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 32px;
+  border-radius: 160px;
+  transition: 0.5s;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 8px 60px rgba(255, 255, 255, 0.1),
+    inset 0 8px 8px rgba(255, 255, 255, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  /* background: linear-gradient(to bottom, #444, #222); */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.1);
+  transition: 0.5s;
+}
