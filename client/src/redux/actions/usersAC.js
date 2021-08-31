@@ -1,4 +1,4 @@
-import { SHOW_USERS, DELETE_USERS, CHANGE_STATUS, SHOW_STATIC } from "../types/usersTypes";
+import { SHOW_USERS, DELETE_USERS, CHANGE_STATUS } from "../types/usersTypes";
 
 import axios from "axios";
 
@@ -23,7 +23,6 @@ export function deleteUser(id) {
   };
 }
 
-
 export const getAllUsers = () => async (dispatch) => {
   const users = await axios("http://localhost:3001/admin");
   dispatch(setAllUsers(users.data));
@@ -38,5 +37,3 @@ export const deleteUserThunk = (id) => async (dispatch) => {
   await axios.delete("http://localhost:3001/admin", { data: { id } });
   dispatch(deleteUser(id));
 };
-
-

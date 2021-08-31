@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addPain } from "../../../redux/actions/postAC";
 import Button from "../Button copy/Button";
-import Input from "../Input/Input";
 import form from "./textArea.module.css";
 
 export default function FormTextArea({ move, title, handlerSend }) {
@@ -50,7 +49,6 @@ export default function FormTextArea({ move, title, handlerSend }) {
           </div>
           <div className={form.inputBox}>
             <Button
-              //   className={form.input}
               text={move}
               color={"rgba(0, 210, 255, 0.4)"}
             />

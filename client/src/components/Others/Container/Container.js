@@ -1,7 +1,7 @@
 import Item from "../Item/Item";
 import container from "./container.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { getAllPost } from "../../../redux/actions/postAC";
 import { useEditContext } from "../../../contexts/PostContext";
 import {
@@ -11,8 +11,7 @@ import {
 } from "../../../redux/actions/usersAC";
 import { getAllPostsCurUser } from "../../../redux/actions/postsCurrentUserAC";
 import { getRoomsPosts } from "../../../redux/actions/roomAC";
-import Toggle from "../Toggle/Toggle";
-import Modal from "../Modal/Modal";
+
 
 export default function Container({
   title,
@@ -96,23 +95,6 @@ export default function Container({
             curUserPosts.map((el) => (
               <Item key={el.id} id={el.id} move={move} text={el.name} />
             ))}
-
-          {/* {users &&
-            users.map((el) => {
-              if (!el.aproved) {
-                return (
-                  <Item
-                    key={el.id}
-                    hadlerEdit={() => handlerStatus(el.id)}
-                    hadlerDelete={() => handlerDelete(el.id)}
-                    move={move}
-                    text={`${el.name} status: ${
-                      el.moderate ? "moder" : "user"
-                    }`}
-                  />
-                );
-              }
-            })} */}
         </div>
       </div>
     </div>

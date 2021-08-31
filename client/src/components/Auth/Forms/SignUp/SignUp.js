@@ -28,8 +28,7 @@ const SignUp = () => {
     
     if (payload.length) {
       payload = Object.fromEntries(payload);
-      // localStorage.setItem("user", payload.name)
-      
+    
       dispatch(signUp(payload, history));
     }
   };

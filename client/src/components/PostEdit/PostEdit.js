@@ -1,12 +1,10 @@
 import postEdit from "./postEdit.module.css";
 import { useEditContext } from "../../../src/contexts/PostContext";
 import Input from "../../components/Others/Input/Input";
-// import Button from "../../components/Others/Button/Button";
 import { removePost, changePost } from "../../redux/actions/postAC";
 import { useDispatch } from "react-redux";
-
-
 import Button from "../Others/Button copy/Button";
+
 function PostEdit() {
   const { setEdit, edit, post, setPost, editTag, tag } = useEditContext();
 

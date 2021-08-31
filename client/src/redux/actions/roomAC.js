@@ -1,4 +1,4 @@
-import { ROOM_POSTS, ADD_TO_FAVOURITE, DELETE_FAVOURITE } from "../types/roomTypes"
+import { ROOM_POSTS } from "../types/roomTypes"
 
 import axios from "axios";
 
@@ -8,20 +8,6 @@ export function setAll(value) {
     payload: value,
   };
 }
-
-// export function deleteFavourite(id) {
-//   return {
-//     type: DELETE_FAVOURITE,
-//     payload: id
-//   }
-// }
-
-// export function addFavourite(id) {
-//   return {
-//     type: ADD_TO_FAVOURITE,
-//     payload: id
-//   }
-// }
 
 export const getRoomsPosts = (id) => async (dispatch) => {
   const posts = await axios(`http://localhost:3001/tools/${id}`);

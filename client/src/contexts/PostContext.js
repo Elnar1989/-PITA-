@@ -64,7 +64,6 @@ function EditContextProvider({ children }) {
         show={true}
       />
     );
-    // <Modal { title: name, body:body }/>
   }
   function handlerView2(idPost) {
     const currPost = curUserPosts.find(el => el.id === idPost)
@@ -73,7 +72,6 @@ function EditContextProvider({ children }) {
     const body = currPost.body
     const id = currPost.id
     setModel(<Modal key={id} name={name} body={body} showHeart={false} setModel={setModel} id={id} show={true} />)
-    // <Modal { title: name, body:body }/>
 
   }
 

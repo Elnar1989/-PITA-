@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useEditContext } from "../../../contexts/PostContext";
 import Container from "../../Others/Container/Container";
 import Toggle from "../../Others/Toggle/Toggle"

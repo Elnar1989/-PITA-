@@ -6,8 +6,6 @@ import { useCenteredTree } from "./helper/helpers";
 import "../I/style/styles.css";
 import { getAllTag } from "../../redux/actions/tagAC";
 
-// Here we're using `renderCustomNodeElement` to represent each node
-// as an SVG `rect` instead of the default `circle`.
 const renderRectSvgNode = ({ nodeDatum, toggleNode }) => (
   <g className={tree.wrapper}>
     <circle

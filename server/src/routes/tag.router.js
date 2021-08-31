@@ -1,5 +1,5 @@
-const { Router, raw } = require("express");
-const { Tag, Prodact, Tag_Prodact } = require("../db/models");
+const { Router } = require("express");
+const { Tag, Prodact } = require("../db/models");
 const tagRouter = Router();
 
 tagRouter.route("/").get(async (req, res) => {
@@ -15,7 +15,6 @@ tagRouter.route("/").get(async (req, res) => {
       },
 
     ],
-    // raw: true
   });
 
   res.json(tags);

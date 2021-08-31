@@ -10,7 +10,6 @@ const SignOut = () => {
     localStorage.clear()
     dispatch(signOut())
     history.push('/')
-    // history.replace("/");
   }, [])
 
   return null

@@ -1,4 +1,3 @@
-// const userModel = require('../models/user.model')
 const { User } = require('../db/models')
 
 const editUser = async (req, res) => {
@@ -6,7 +5,7 @@ const editUser = async (req, res) => {
   if (updatedFields.length) {
     updatedFields = Object.fromEntries(updatedFields)
     try {
-      // eslint-disable-next-line max-len
+   
 
       const updatedUser = await User.findOne({ where: { id: req.session.user.id } })
       updatedUser.update(updatedFields);

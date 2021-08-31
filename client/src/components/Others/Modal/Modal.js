@@ -5,14 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   addToFavourite,
   deleteToFavourite,
-  getToFavourite,
 } from "../../../redux/actions/roomAC";
-import { useEditContext } from "../../../contexts/PostContext";
 
 export default function Modal({ name, tag, setModel, body, id, showHeart = true }) {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  const { importants } = useEditContext();
+
 
   const [showModal, setShowModal] = useState(true);
 

@@ -1,7 +1,5 @@
-import { extend, useThree } from "react-three-fiber";
+import { extend } from "react-three-fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import * as THREE from "three";
-import { useEffect } from "react";
 extend({ OrbitControls });
 
 

@@ -17,7 +17,6 @@ adminRouter
   })
   .delete(async (req, res) => {
     const { id } = req.body;
-    console.log(req.body);
     await User.destroy({ where: { id } });
     res.status(200).end();
   })

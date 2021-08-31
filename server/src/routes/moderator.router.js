@@ -21,9 +21,6 @@ moderatorRouter
       const currTag = await Tag.findOne({ where: { name: allTags[i] } });
 
       if (currTag) {
-        console.log('=======> tag true', currTag.id)
-        // currTag.count += 1;
-        // await currTag.save();
         await Tag_Prodact.create({ TagId: currTag.id, PostId: id });
       } else {
         const newTag = await Tag.create({ name: allTags[i], count: 1 });

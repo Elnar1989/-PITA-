@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
 
 import Header from "../Header/Header";
 import SignIn from "../Auth/Forms/SignIn/SignIn";
@@ -12,10 +12,9 @@ import Inspiration from "../I/Inspiration";
 import { useSelector } from "react-redux";
 import Admin from "../A/Admin/Admin";
 import { useEditContext } from "../../contexts/PostContext";
-import { Scene } from "three";
 import Main from "../Main/Main";
 
-// import TestUsers from "../TestUsers/TestUsers";
+
 
 function App() {
   const user = useSelector((state) => state.user);

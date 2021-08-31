@@ -26,7 +26,6 @@ export default function Inspiration() {
       const body = currPost.body
       const id = currPost.id
       setModel(<Modal key={id} name={name} body={body} setModel={setModel} id={id} show={true} />)
-      // <Modal { title: name, body:body }/>
     }
   }
 

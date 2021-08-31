@@ -69,7 +69,6 @@ export const changePost = (id, title, body, tag) => async (dispatch) => {
   await axios
     .patch("http://localhost:3001/moderator", { id, title, body, tag })
     .then((res) => {
-      // dispatch(editPost(res.data));
       dispatch(addTag(res.data));
     });
   dispatch(editPost(id));

@@ -30,8 +30,6 @@ const SignIn = () => {
     
     if (payload.length) {
       payload = Object.fromEntries(payload);
-      // localStorage.setItem("user", payload.name)
-      
       dispatch(signIn(payload, history, from));
     }
   };

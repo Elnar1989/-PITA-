@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useEditContext } from "../../../contexts/PostContext";
 import toggle from "./toggle.module.css";
 

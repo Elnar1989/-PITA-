@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FormTextArea from "../Others/FormTextArea/FormTextArea";
 import pain from "./pain.module.css";
-import loader from '../../icons/Cube-1.1s-347px.svg';
+
 
 export default function Pain() {
   const [send, setSend] = useState(false);

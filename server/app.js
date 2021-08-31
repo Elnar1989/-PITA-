@@ -24,10 +24,8 @@ const currentUser = require('./src/routes/currentuser.router')
 
 
 
-// SERVER'S SETTINGS
 app.set('cookieName', COOKIE_NAME)
 
-// APP'S MIDDLEWARES
 app.set('trust proxy', 1)
 app.use(morgan('dev'));
 app.use(cors({
@@ -50,11 +48,11 @@ app.use(session({
   cookie: {
     secure: false,
     httpOnly: true,
-    maxAge: 1e3 * 86400, // COOKIE'S LIFETIME — 1 DAY
+    maxAge: 1e3 * 86400,
   },
 }))
 
-// APP'S ROUTES
+
 app.use('/post', postRouter)
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/users', usersRouter)

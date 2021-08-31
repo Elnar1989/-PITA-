@@ -1,7 +1,7 @@
 import main from "./main.module.css";
 import { Canvas, useFrame } from "react-three-fiber";
-import { Suspense, useRef } from "react";
-import { extend, useThree } from "react-three-fiber";
+import { useRef } from "react";
+import { extend } from "react-three-fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -27,9 +27,8 @@ const SpinningMesh = ({ position, args, color }) => {
 export default function Main() {
   const user = useSelector((state) => state.user);
   const users = localStorage.getItem("user");
-  const { toggleHeader, toggleHeaderOnHeandler, toggleHeaderOffHeandler } =
+  const { toggleHeaderOnHeandler, toggleHeaderOffHeandler } =
     useEditContext();
-    console.log(users);
   return (
     <div className={main.container}>
       <div className={main.nav}>

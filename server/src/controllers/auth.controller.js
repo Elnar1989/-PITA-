@@ -1,6 +1,4 @@
 const bcrypt = require("bcrypt");
-// const userModel = require('../models/user.model')
-// const db = require('../db/models');
 const { User, Room } = require("../db/models");
 
 const signUp = async (req, res) => {
